@@ -13,10 +13,11 @@ const login = () => {
   }
 };
 </script>
- 
+
 <template>
   <div class="home-container">
-    <h1>Home</h1>
+    <h1 class="header">Movie Net</h1>
+    <p class="login">Login</p>
     <form @submit.prevent="login()">
       <input type="text" v-model="username" placeholder="Username" />
       <input type="password" v-model="password" placeholder="Password" />
@@ -27,8 +28,19 @@ const login = () => {
     </div>
   </div>
 </template>
- 
+
 <style scoped>
+.header {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5cm;
+  font-weight: 100;
+  padding: 10px;
+  margin-top: -21px;
+  margin-left: -1270.5px;
+  padding-left: 10px;
+  z-index: 2;
+}
 .home-container {
   display: flex;
   flex-direction: column;
@@ -48,7 +60,7 @@ form input {
   font-size: 1.5rem;
   font-weight: 100;
 }
-.error{
+.error {
   font-size: 35%;
   color: rgb(0, 0, 0);
   border: 2px solid rgb(255, 0, 0);
@@ -58,5 +70,11 @@ form input {
   margin-top: 5px;
   opacity: 100%;
 }
- 
+
+.login {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 5cm;
+  font-weight: 100;
+}
 </style>

@@ -2,8 +2,6 @@
 
 <template>
   <div class="app-container">
-  <div id="nav">
-  </div>
     <RouterView />
   </div>
 </template>

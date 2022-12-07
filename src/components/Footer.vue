@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 660px;
+  margin-top: 628px;
   color: white;
   font-size: 18px;
   background-color: rgb(35, 31, 32);

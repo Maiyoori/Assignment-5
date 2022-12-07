@@ -18,7 +18,7 @@
     margin-right: 1.6%;
     padding: 10px;
     position: absolute;
-    color: white;
+    color: rgb(89, 16, 216);
     border: solid white;
     background-color: rgb(35, 31, 32);
 }
@@ -32,7 +32,7 @@
     padding-left: 21px;
     padding-right: 21px;
     position: absolute;
-    color: white;
+    color: rgb(89, 16, 216);
     border: solid white;
     background-color: rgb(35, 31, 32);
 }
