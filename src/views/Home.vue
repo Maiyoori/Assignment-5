@@ -1,34 +1,29 @@
 <script setup>
-import { ref } from "vue";
 import { useRouter } from "vue-router";
+import Header from "../components/Header.vue";
+import Hero from "../components/Hero.vue";
 const router = useRouter();
 </script>
- 
+
 <template>
-    <div class="title-logo">
-        <img class="logo" src="../assets/movie-net.png">
-    </div>
-    <img class="background" src="../assets/background.jpg">
+  <img class="background" src="../assets/home-background.jpg" />
+  <Header />
+  <Hero />
 </template>
 
 <style>
-.title-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.logo {
-    z-index: 1;
-    width: 370px;
-    position: absolute;
-    margin-top: 10px;
-}
-
 .background {
-    position: absolute;
-    width: 1500px;
-    height: 1400px;
-    z-index: -1;
+  position: absolute;
+  width: 1537px;
+  height: 610px;
+  margin-top: 86px;
+  margin-left: -11px;
+  z-index: -1;
+  border: solid white ;
+  opacity: 100%;
+}
+
+body {
+  background-color: rgb(35, 31, 32);
 }
 </style>
