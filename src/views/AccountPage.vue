@@ -1,18 +1,12 @@
 <script setup>
-import Date from "../components/Date.vue";
-import Weather from "../components/Weather.vue";
-import Calculator from "../components/Calculator.vue";
-import Register from "../components/Register.vue";
+import { useRouter } from "vue-router";
+import MovieDisplay from "../components/MovieDisplay.vue";
+const router = useRouter();
 </script>
  
 <template>
   <div class="account-container">
-    <Date />
-    <Suspense>
-      <Weather />
-    </Suspense>
-    <Calculator />
-    <Register />
+    <MovieDisplay />
   </div>
 </template>
  

@@ -1,4 +1,5 @@
 <script setup>
+import { useRouter } from "vue-router";
 import axios from "axios";
 const response = (
   await axios.get("https://api.open-meteo.com/v1/forecast", {
