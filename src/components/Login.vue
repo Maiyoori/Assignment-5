@@ -6,7 +6,7 @@ const username = ref("");
 const password = ref("");
 const error = ref(false);
 const login = () => {
-  if (username.value === "TMDB" && password.value === "Movies") {
+  if (username.value === "tmdb" && password.value === "movies") {
     router.push("/account");
   } else {
     error.value = true;
@@ -34,7 +34,6 @@ const login = () => {
 </template>
 
 <style scoped>
-
 .login {
   color: rgb(15, 222, 50);
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -71,8 +70,8 @@ const login = () => {
   font-size: 1.5cm;
   font-weight: 100;
   padding: 10px;
-  margin-top: -610px;
-  margin-left: -1270.5px;
+  margin-top: -740px;
+  margin-left: -1014.5px;
   padding-left: 10px;
   z-index: 2;
 }

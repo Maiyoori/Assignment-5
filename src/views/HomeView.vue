@@ -7,7 +7,7 @@ const router = useRouter();
 </script>
 
 <template>
-  <img class="background" src="../assets/home-background.jpg" />
+  <img class="background" src="../assets/background.jpg" />
   <Header />
   <Hero />
   <Footer />
@@ -16,12 +16,12 @@ const router = useRouter();
 <style>
 .background {
   position: absolute;
-  width: 1515px;
-  height: 610px;
+  width: 1257px;
+  height: 775px;
   margin-top: 86px;
-  margin-left: -8px;
+  margin-left: -15px;
   z-index: 0;
-  border: solid white ;
+  border: solid white;
   opacity: 100%;
 }
 
