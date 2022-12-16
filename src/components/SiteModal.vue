@@ -19,8 +19,8 @@ let data = (
         <button class="close-button" @click="emits('toggleModal')">X</button>
         <img class="poster" :src="`https://image.tmdb.org/t/p/w500/${data.poster_path}`" />
         <div class="title-overflow">
-        <p class="modal-title">{{ data.title }}</p>
-      </div>
+          <p class="modal-title">{{ data.title }}</p>
+        </div>
         <p class="info">{{ data.release_date }}</p>
         <iframe class="iframe" :src="`https://www.youtube.com/embed/${data.videos.results.filter((video) => video.type === 'Trailer').at(0).key
         }`"></iframe>
@@ -35,12 +35,13 @@ let data = (
   margin-top: 20px;
 }
 
-.title-overflow{
+.title-overflow {
   text-overflow: ellipsis;
-  overflow:hidden;
+  overflow: hidden;
   margin-top: -400px;
-  
+
 }
+
 .modal-title {
   font-size: 35px;
   color: beige;

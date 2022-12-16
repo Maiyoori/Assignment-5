@@ -40,6 +40,7 @@ button {
   margin-top: -106px;
   margin-left: 1205px;
 }
+
 .login-text {
   color: white;
   font-size: 18px;
@@ -47,13 +48,14 @@ button {
   margin-top: -66px;
   position: absolute;
 }
+
 .icon-container:hover .account-icon {
   border: solid rgb(213, 85, 249) 0.9px;
   margin-left: 1204px;
   margin-top: -107px;
 }
+
 a:hover {
   color: rgb(213, 85, 249);
 }
-
 </style>

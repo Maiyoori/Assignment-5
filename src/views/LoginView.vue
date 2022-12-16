@@ -8,7 +8,6 @@ import Login from "../components/Login.vue";
 </template>
 
 <style>
-
 .background {
   position: absolute;
   width: 1257px;

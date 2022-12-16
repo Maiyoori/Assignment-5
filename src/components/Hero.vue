@@ -11,7 +11,6 @@
 </template>
 
 <style scoped>
-
 .endgame,
 .thor {
     position: absolute;
@@ -28,7 +27,8 @@
     margin-left: 340px;
 }
 
-.main, .sign-in{
+.main,
+.sign-in {
 
     margin-left: 52.5%;
     margin-right: 1.6%;
@@ -45,6 +45,7 @@
     margin-top: 150px;
     margin-right: 1.6%;
 }
+
 .sign-in {
     font-size: 29px;
     margin-top: 320px;
@@ -52,6 +53,4 @@
     padding-right: 21px;
     margin-top: 430px;
 }
-
-
 </style>
