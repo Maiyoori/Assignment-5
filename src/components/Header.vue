@@ -25,20 +25,12 @@
 }
 
 button {
-  margin-top: -100px;
+  margin-top: -106px;
   position: absolute;
   width: 40px;
   height: 40px;
-  margin-left: 1420px;
+  margin-left: 1205px;
   opacity: 0%;
-}
-
-.login-text {
-  color: white;
-  font-size: 18px;
-  margin-left: 1418.5px;
-  margin-top: -66px;
-  position: absolute;
 }
 
 .account-icon {
@@ -46,16 +38,22 @@ button {
   width: 40px;
   height: 40px;
   margin-top: -106px;
-  margin-left: 1418px;
+  margin-left: 1205px;
 }
-
+.login-text {
+  color: white;
+  font-size: 18px;
+  margin-left: 1205px;
+  margin-top: -66px;
+  position: absolute;
+}
 .icon-container:hover .account-icon {
   border: solid rgb(213, 85, 249) 0.9px;
-  margin-left: 1417.5px;
+  margin-left: 1204px;
   margin-top: -107px;
 }
-
 a:hover {
   color: rgb(213, 85, 249);
 }
+
 </style>

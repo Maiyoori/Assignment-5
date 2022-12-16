@@ -11,10 +11,26 @@
 </template>
 
 <style scoped>
-.main{
-    font-size: 70px;
+
+.endgame,
+.thor {
+    position: absolute;
+    width: 300px;
     margin-top: 120px;
-    margin-left: 50%;
+    border: solid white 2px;
+}
+
+.thor {
+    margin-left: 15px;
+}
+
+.endgame {
+    margin-left: 340px;
+}
+
+.main, .sign-in{
+
+    margin-left: 52.5%;
     margin-right: 1.6%;
     padding: 10px;
     position: absolute;
@@ -24,31 +40,18 @@
     text-align: center;
 }
 
-.sign-in{
+.main {
+    font-size: 70px;
+    margin-top: 150px;
+    margin-right: 1.6%;
+}
+.sign-in {
     font-size: 29px;
     margin-top: 320px;
-    margin-left: 50%;
-    margin-right: 1.6%;
-    padding: 10px;
     padding-left: 21px;
     padding-right: 21px;
-    position: absolute;
-    color: rgb(15, 222, 50);
-    border: solid white;
-    background-color: rgb(35, 31, 32);
+    margin-top: 430px;
 }
 
-.endgame, .thor{
-    position: absolute;
-    width: 350px;
-    margin-top: 0px;
-}
 
-.thor{
-    margin-left: 15px;
-}
-
-.endgame{
-    margin-left: 390px;
-}
 </style>
