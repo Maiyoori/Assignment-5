@@ -2,55 +2,129 @@
 </script>
 
 <template>
-    <div class="hero-container">
-        <p class="main">Watch trending movies anytime, anywhere</p>
-        <p class="sign-in">Sign into your account to watch your downloaded movies</p>
+  <div class="hero-container">
+    <p class="main">Watch trending movies anytime, anywhere</p>
+    <p class="sign-in">Sign into your account to watch your downloaded movies</p>
+  </div>
+
+  <body>
+    <div class="content">
+      <span class="thor"><img src="../assets/thor.jpg"></span>
+      <span class="endgame"><img src="../assets/endgame.jpg"></span>
+      <span class="last-dance"><img src="../assets/hill-house.jpg"></span>
+      <span class="joker"><img src="../assets/joker.jpg"></span>
+      <span class="now-you-see-me"><img src="../assets/now-you-see-me.jpg"></span>
+      <span class="extraction"><img src="../assets/extraction.jpg"></span>
+      <span class="uncharted"><img src="../assets/uncharted.jpg"></span>
+      <span class="lion-king"><img src="../assets/lion-king.jpg"></span>
     </div>
-    <img class="endgame" src="../assets/endgame.jpg" alt="Poster" />
-    <img class="thor" src="../assets/thor.jpg" alt="Poster" />
+  </body>
 </template>
 
 <style scoped>
-.endgame,
-.thor {
-    position: absolute;
-    width: 300px;
-    margin-top: 120px;
-    border: solid white 2px;
+.main {
+  position: absolute;
+  text-align: center;
+  font-size: 70px;
+  background-color: rgb(35, 31, 32);
+  color: rgb(243, 181, 38);
+  border: solid white;
+  padding: 10px;
+  margin-top: 10%;
+  margin-left: 50%;
+  margin-right: 1.6%;
+}
+
+.sign-in {
+  position: absolute;
+  font-size: 29px;
+  background-color: rgb(35, 31, 32);
+  color: rgb(243, 181, 38);
+  border: solid white;
+  padding: 10px;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin-top: 350px;
+  margin-left: 50%;
+  margin-right: 1.6%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 600px;
+  width: 600px;
+  margin-top: 50px;
+}
+
+.content {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+  width: 250px;
+  height: 350px;
+  margin-top: 145px;
+  margin-left: 250px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.content span {
+  position: absolute;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(325px);
+  width: 100%;
+  height: 102%;
+}
+
+.content span img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1.5s;
 }
 
 .thor {
-    margin-left: 15px;
+  --i: 1;
+}
+
+.last-dance {
+  --i: 2
+}
+
+.joker {
+  --i: 3
+}
+
+.now-you-see-me {
+  --i: 4
 }
 
 .endgame {
-    margin-left: 340px;
+  --i: 5
 }
 
-.main,
-.sign-in {
-
-    margin-left: 52.5%;
-    margin-right: 1.6%;
-    padding: 10px;
-    position: absolute;
-    color: rgb(15, 222, 50);
-    border: solid white;
-    background-color: rgb(35, 31, 32);
-    text-align: center;
+.extraction {
+  --i: 6
 }
 
-.main {
-    font-size: 70px;
-    margin-top: 150px;
-    margin-right: 1.6%;
+.uncharted {
+  --i: 7
 }
 
-.sign-in {
-    font-size: 29px;
-    margin-top: 320px;
-    padding-left: 21px;
-    padding-right: 21px;
-    margin-top: 430px;
+.lion-king {
+  --i: 8
 }
 </style>

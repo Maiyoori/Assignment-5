@@ -3,23 +3,17 @@ import Login from "../components/Login.vue";
 </script>
  
 <template>
-  <img class="background" src="../assets/background.jpg" />
+  <img class="background" src="../assets/home-background.jpg" />
   <Login />
 </template>
-
-<style>
+ 
+<style scoped>
 .background {
   position: absolute;
-  width: 1257px;
-  height: 775px;
-  margin-top: 85px;
-  margin-left: -8px;
-  z-index: 0;
+  width: 1515px;
+  height: 610px;
   border: solid white;
-  opacity: 100%;
-}
-
-body {
-  background-color: rgb(35, 31, 32);
+  margin-top: 76px;
+  margin-left: -8px;
 }
 </style>

@@ -2,6 +2,7 @@
 import axios from "axios";
 import { ref } from 'vue';
 import SiteModal from '../components/SiteModal.vue';
+
 let data = (
   await axios.get("https://api.themoviedb.org/3/trending/movie/week", {
     params: {
@@ -9,12 +10,16 @@ let data = (
     },
   })
 ).data.results;
+
+
 const showModal = ref(false);
 const selectedId = ref(0);
+
 const openModal = (id) => {
   showModal.value = true;
   selectedId.value = id;
 };
+
 const closeModal = () => {
   showModal.value = false;
 };
@@ -32,14 +37,13 @@ const closeModal = () => {
 
 <style>
 .header {
-  color: white;
+  color: rgb(243, 181, 38);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5cm;
   font-weight: 100;
   padding: 10px;
-  margin-top: -10px;
   padding-left: 10px;
-  padding-bottom: 0px;
+  margin-top: -10px;
 }
 
 .purchase-container {
@@ -47,9 +51,12 @@ const closeModal = () => {
   grid-template-columns: repeat(4, 1fr);
   gap: 45px;
   padding: 12px;
+  margin-top: -50px;
+  margin-left: -5px;
 }
 
 .poster {
-  height: 400px;
+  height: 500px;
+  border: solid rgb(243, 181, 38);
 }
 </style>

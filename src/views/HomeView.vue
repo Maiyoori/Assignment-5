@@ -7,25 +7,24 @@ const router = useRouter();
 </script>
 
 <template>
-  <img class="background" src="../assets/background.jpg" />
+  <img class="background" src="../assets/home-background.jpg" />
   <Header />
   <Hero />
   <Footer />
 </template>
 
 <style>
-.background {
-  position: absolute;
-  width: 1257px;
-  height: 775px;
-  margin-top: 86px;
-  margin-left: -15px;
-  z-index: 0;
-  border: solid white;
-  opacity: 100%;
-}
-
 body {
   background-color: rgb(35, 31, 32);
+}
+
+.background {
+  position: absolute;
+  width: 1515px;
+  height: 610px;
+  border: solid white;
+  margin-top: 86px;
+  margin-left: -8px;
+  z-index: 0;
 }
 </style>

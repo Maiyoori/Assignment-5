@@ -35,47 +35,45 @@ const login = () => {
 
 <style scoped>
 .login {
-  color: rgb(15, 222, 50);
+  position: absolute;
+  background-color: rgb(35, 31, 32);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 5cm;
   font-weight: 100;
-  z-index: 1;
-  color: rgb(15, 222, 50);
+  color: rgb(243, 181, 38);
   border: solid white;
-  background-color: rgb(35, 31, 32);
   padding-bottom: 20px;
-  margin-top: 105px;
-  position: absolute;
+  margin-top: 80px;
+  z-index: 1;
 }
 
 .input {
   z-index: 1;
-  margin-top: 305px;
+  margin-top: 280px;
 }
 
 .error {
-  font-size: 35%;
+  position: absolute;
+  background-color: rgb(300, 215, 223);
   color: rgb(0, 0, 0);
   border: 2px solid rgb(255, 0, 0);
-  background-color: rgb(275, 225, 233);
+  font-size: 35%;
   padding-left: 3px;
   padding-right: 3px;
-  margin-top: 520px;
-  opacity: 100%;
+  margin-top: 490px;
   z-index: 1;
-  position: absolute;
 }
 
 .header {
-  color: white;
   position: absolute;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5cm;
   font-weight: 100;
+  color: rgb(243, 181, 38);
   padding: 10px;
-  margin-top: -740px;
-  margin-left: -1014.5px;
   padding-left: 10px;
+  margin-top: -610px;
+  margin-left: -1270.5px;
   z-index: 2;
 }
 
@@ -92,14 +90,14 @@ const login = () => {
 form {
   display: flex;
   flex-direction: column;
-  z-index: 1;
   border: solid white;
+  z-index: 1;
 }
 
 form input {
-  padding: 0.25rem;
   color: rgb(0, 0, 0);
   font-size: 1.5rem;
   font-weight: 100;
+  padding: 0.25rem;
 }
 </style>
