@@ -17,12 +17,11 @@ const router = useRouter();
 .background {
   position: absolute;
   width: 1257px;
-  height: 775px;
-  margin-top: 86px;
-  margin-left: -15px;
-  z-index: 0;
+  height: 800px;
   border: solid white;
-  opacity: 100%;
+  margin-top: 80px;
+  margin-left: -8px;
+  z-index: 0;
 }
 
 body {

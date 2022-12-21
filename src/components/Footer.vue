@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 800px;
+  margin-top: 290px;
   color: white;
   font-size: 18px;
   background-color: rgb(35, 31, 32);
@@ -35,18 +35,18 @@
 }
 
 .contact:hover {
-  color: rgb(213, 85, 249);
+  color: rgb(243, 181, 38);
 }
 
 .github:hover {
-  color: rgb(213, 85, 249);
+  color: rgb(243, 181, 38);
 }
 
 .contact:hover {
-  color: rgb(213, 85, 249);
+  color: rgb(243, 181, 38);
 }
 
 .about:hover {
-  color: rgb(213, 85, 249);
+  color: rgb(243, 181, 38);
 }
 </style>

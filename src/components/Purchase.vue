@@ -21,7 +21,7 @@ const closeModal = () => {
 </script>
 
 <template>
-    <h1 class="header">Movie Net</h1>
+  <h1 class="header">Movie Net</h1>
   <SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
   <div class="purchase-container">
     <img v-for="movie in data" @click="openModal(movie.id)" class="poster"
@@ -31,16 +31,14 @@ const closeModal = () => {
 </template>
 
 <style>
-
 .header {
-  color: white;
+  color: rgb(243, 181, 38);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5cm;
   font-weight: 100;
   padding: 10px;
-  margin-top: -10px;
   padding-left: 10px;
-  padding-bottom: 0px;
+  margin-top: -18px;
 }
 
 .purchase-container {
@@ -48,9 +46,12 @@ const closeModal = () => {
   grid-template-columns: repeat(4, 1fr);
   gap: 45px;
   padding: 12px;
+  margin-top: -55px;
 }
 
 .poster {
   height: 400px;
+  border: solid rgb(243, 181, 38);
+  margin-left: -3px;
 }
 </style>

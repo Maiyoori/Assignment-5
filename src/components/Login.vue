@@ -15,18 +15,19 @@ const login = () => {
 </script>
 
 <template>
+  <img class="background" src="../assets/background.jpg" />
   <div class="home-container">
     <h1 class="header">Movie Net</h1>
     <p class="login">Login</p>
     <div class="input">
-  <RouterLink to="/Account" custom v-slot="{ navigate }">
-    <form @submit.prevent="login()">
-      <input type="text" v-model="username" placeholder="Username" />
-      <input type="password" v-model="password" placeholder="Password" />
-      <input type="submit" value="Login" />
-    </form>
-  </RouterLink>
-  </div>
+      <RouterLink to="/Account" custom v-slot="{ navigate }">
+        <form @submit.prevent="login()">
+          <input type="text" v-model="username" placeholder="Username" />
+          <input type="password" v-model="password" placeholder="Password" />
+          <input type="submit" value="Login" />
+        </form>
+      </RouterLink>
+    </div>
     <div v-if="error" class="error">
       <p>Incorrect username or password.</p>
     </div>
@@ -36,22 +37,24 @@ const login = () => {
 <style scoped>
 .login {
   color: rgb(15, 222, 50);
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 5cm;
-    font-weight: 100;
-    z-index: 1;
-    color: rgb(15, 222, 50);
-    border: solid white;
-    background-color: rgb(35, 31, 32);
-    padding-bottom: 20px;
-    margin-top: 105px;
-    position: absolute;
-  }
-  .input{
-    z-index: 1;
-    margin-top: 305px;
-  }
-  .error {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 5cm;
+  font-weight: 100;
+  z-index: 1;
+  color: rgb(243, 181, 38);
+  border: solid white;
+  background-color: rgb(35, 31, 32);
+  padding-bottom: 20px;
+  margin-top: 105px;
+  position: absolute;
+}
+
+.input {
+  z-index: 1;
+  margin-top: 305px;
+}
+
+.error {
   font-size: 35%;
   color: rgb(0, 0, 0);
   border: 2px solid rgb(255, 0, 0);
@@ -63,18 +66,20 @@ const login = () => {
   z-index: 1;
   position: absolute;
 }
-  .header {
-  color: white;
+
+.header {
+  color: rgb(243, 181, 38);
   position: absolute;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5cm;
   font-weight: 100;
   padding: 10px;
-  margin-top: -740px;
+  margin-top: -794px;
   margin-left: -1014.5px;
   padding-left: 10px;
   z-index: 2;
 }
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -84,12 +89,14 @@ const login = () => {
   height: 100vh;
   font-size: 4rem;
 }
+
 form {
   display: flex;
   flex-direction: column;
   z-index: 1;
   border: solid white;
 }
+
 form input {
   padding: 0.25rem;
   color: rgb(0, 0, 0);
@@ -97,5 +104,13 @@ form input {
   font-weight: 100;
 }
 
-
+.background {
+  position: absolute;
+  width: 1257 px;
+  height: 800px;
+  margin-top: 62px;
+  margin-left: -8px;
+  border: solid white;
+  z-index: 0;
+}
 </style>
