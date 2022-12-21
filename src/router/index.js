@@ -7,16 +7,16 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/Login",
-      component: LoginView,
+      path: '/Login',
+      component: LoginView
     },
     {
-      path: "/",
-      component: HomeView,
+      path: '/',
+      component: HomeView
     },
     {
-      path: "/Account",
-      component: AccountView,
+      path: '/Account',
+      component: AccountView
     },
   ],
 });

@@ -84,7 +84,6 @@ let data = (
   margin-left: 290px;
 }
 
-
 .release {
   position: relative;
   color: rgb(243, 181, 38);

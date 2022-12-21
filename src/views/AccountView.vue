@@ -6,6 +6,7 @@ import Purchase from "../components/Purchase.vue";
   <Suspense>
     <Purchase />
   </Suspense>
+
 </template>
 
 <style>

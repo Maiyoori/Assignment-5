@@ -17,10 +17,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: rgb(35, 31, 32);
+  margin-top: 290px;
   color: white;
   font-size: 18px;
-  margin-top: 140px;
+  background-color: rgb(35, 31, 32);
 }
 
 .github,
@@ -31,7 +31,7 @@
 }
 
 .contact {
-  margin-top: -3px;
+  margin-top: 0px;
 }
 
 .contact:hover {
@@ -39,6 +39,10 @@
 }
 
 .github:hover {
+  color: rgb(243, 181, 38);
+}
+
+.contact:hover {
   color: rgb(243, 181, 38);
 }
 
