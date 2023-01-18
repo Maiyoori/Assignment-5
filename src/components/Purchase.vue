@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import SiteModal from '../components/SiteModal.vue';
-import {useStore} from "../store/index.js"
+import { useStore } from "../store/index.js"
 
 
 const store = useStore();
@@ -42,12 +42,18 @@ const getGenres = async () => {
     <option value="10770">TV Movie</option>
     <option value="53">Thriller</option>
   </select>
+  <div class="icon-container">
+    <img class="cart-icon" src="../assets/cart.png" alt="cart" />
+    <RouterLink to="/Cart" custom v-slot="{ navigate }">
+      <button class="button" @click="navigate" role="link">Login</button>
+      <a class="cart-text" @click="navigate" role="link">Cart</a>
+    </RouterLink>
+  </div>
   <div class="purchase-container">
     <img class='poster' v-for="movie in store.movies" :id="movie.id" @click="openModal(movie.id)"
       :src="`https://image.tmdb.org/t/p/w500${movie.poster}`" />
     <SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
   </div>
-
 </template>
 
 <style>
@@ -64,7 +70,7 @@ const getGenres = async () => {
 .purchase-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 45px;
+  gap: 39px;
   padding: 12px;
   margin-top: -55px;
 }
@@ -75,10 +81,45 @@ const getGenres = async () => {
   margin-left: -3px;
 }
 
-.dropdown{
-  margin-top: -200px;
-  margin-left: 900px;
+.dropdown {
+  margin-top: -95px;
+  margin-left: 1015px;
   font-size: larger;
   text-align: center;
+  position: absolute;
+}
+
+.button,
+.cart-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -105px;
+  margin-left: 1187px;
+}
+
+
+.button {
+  opacity: 0%;
+}
+
+
+.cart-text {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  margin-top: -67px;
+  margin-left: 1190px;
+}
+
+.icon-container:hover .cart-icon {
+  position: absolute;
+  border: solid rgb(243, 181, 38) 1px;
+  margin-top: -106px;
+  margin-left: 1186px;
+}
+
+a:hover {
+  color: rgb(243, 181, 38);
 }
 </style>

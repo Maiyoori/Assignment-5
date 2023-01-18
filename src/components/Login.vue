@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+       
 const router = useRouter();
 const username = ref("");
 const password = ref("");
@@ -74,7 +75,7 @@ const login = () => {
   font-size: 1.5cm;
   font-weight: 100;
   padding: 10px;
-  margin-top: -794px;
+  margin-top: -790px;
   margin-left: -1014.5px;
   padding-left: 10px;
   z-index: 2;

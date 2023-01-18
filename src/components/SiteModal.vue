@@ -1,5 +1,7 @@
 <script setup>
 import axios from "axios";
+import { useStore } from "../store/index.js";
+const store = useStore();
 const props = defineProps(["id"]);
 const emits = defineEmits(["toggleModal"]);
 let data = (
@@ -24,6 +26,17 @@ let data = (
           <p class="rating">{{ data.vote_average }} /10</p>
           <iframe class="iframe"
             :src="`https://www.youtube.com/embed/${data.videos.results.filter((video) => video.type === 'Trailer').at(0).key}`"></iframe>
+          <button class="cart-button" @click="
+  store.addToCart(props.id, {
+    id: data.id,
+    poster: data.poster_path,
+    title: data.title,
+    date: data.release_date,
+    overview: data.overview,
+  })
+          ">
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
@@ -39,13 +52,14 @@ let data = (
   background: #00000099;
   width: 100vw;
   height: 100vh;
-  top: 0;
+  top: 0px;
   left: 0;
   z-index: 1;
 }
 
 .modal-inner-container {
   padding-left: 13px;
+  top: 190px;
 }
 
 .modal-outer-container .modal-inner-container {
@@ -53,7 +67,7 @@ let data = (
   background-color: #1f2123;
   color: white;
   width: clamp(280px, 100%, 900px);
-  height: 450px;
+  height: 460px;
   z-index: 5;
 }
 
@@ -104,6 +118,7 @@ iframe {
   margin-left: 290px;
   height: 250px;
   width: 530px;
+  margin-top: -3px;
 }
 
 .flex-container {
@@ -113,5 +128,28 @@ iframe {
   justify-content: space-between;
   margin-top: -450px;
   padding-bottom: 100px;
+}
+
+.purchase-button {
+  position: absolute;
+  margin-top: 460px;
+  font-size: larger;
+  background-color: rgb(243, 181, 38);
+  margin-left: 11%;
+}
+
+.cart-button {
+  width: 120px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(243, 181, 38);
+  margin-top: 4px;
+  margin-left: 290px;
+  justify-content: center;
+}
+
+.cart-button:hover {
+  border: solid white 0.9px;
+  margin-top: 5px;
 }
 </style>

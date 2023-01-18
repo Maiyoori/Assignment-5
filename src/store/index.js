@@ -23,6 +23,7 @@ export const useStore = defineStore('store', {
                 return {
                     id: movie.id,
                     poster: movie.poster_path,
+                    overview: movie.overview,
                 }
             });
         },
